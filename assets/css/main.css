@@ -7,6 +7,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+html {
+	scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2309,12 +2313,23 @@ input, select, textarea {
 		}
 
 /* Image */
+	/* MY IMAGE */
+	#my_image {
+		padding-bottom: 25px;
+	}
+
+	#my_image img {
+		height: 20%;
+		width: 20%;
+		border-radius: 50%;
+	}
 
 	.image {
 		border-radius: 4px;
 		border: 0;
 		display: inline-block;
 		position: relative;
+		object-fit: contain;
 	}
 
 		.image img {
@@ -2572,8 +2587,33 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
+	}
+
+	/* ADDED */
+	#projects, #skills, #about__me {
+		height: 8rem;
+		display: flex;
+		align-items: center;
+	}
+
+	#projects h2, #skills h2, #about__me h2 {
+		margin-bottom: 5rem;
+		margin-top: 5rem;
+	}
+
+	.skills {
+		
+	}
+
+	.about__inner {
+		width: 60%;
+	}
+
+	.sign__image img {
+		height: 12%;
+		width: 12%;
 	}
 
 		.tiles article {
@@ -2601,6 +2641,7 @@ input, select, textarea {
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					opacity: 0.2; /* CHANGED */
 				}
 
 				.tiles article > .image:before {
@@ -2671,7 +2712,8 @@ input, select, textarea {
 				padding: 1em;
 				border-radius: 4px;
 				border-bottom: 0;
-				color: #ffffff;
+				/* color: #ffffff; */
+				color: #585858;
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
@@ -2682,7 +2724,9 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					/* color: #ffffff !important; */
+					color: #585858 !important;
+
 				}
 
 				.tiles article > a h2 {
@@ -2737,7 +2781,8 @@ input, select, textarea {
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #333333;
+					/* background-color: #333333; */
+					background-color: #ffffff;
 					opacity: 0.35;
 				}
 
@@ -2751,7 +2796,14 @@ input, select, textarea {
 			}
 
 		* + .tiles {
-			margin-top: 2em;
+			/* margin-top: 1em; */
+		}
+
+		/* ADDED */
+		.tiles__links {
+			/* padding-top: 30px; */
+			position: absolute;
+			bottom: -2.4rem;
 		}
 
 		body.is-preload .tiles article {
@@ -3205,6 +3257,7 @@ input, select, textarea {
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
+				text-align: center;
 			}
 
 			#footer > .inner .copyright {
@@ -3212,8 +3265,10 @@ input, select, textarea {
 				padding: 0;
 				margin-top: 5em;
 				list-style: none;
-				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				font-size: 0.86em;
+				color: #555555;
+				/* color: rgba(88, 88, 88, 0.5); */
+				text-align: center;
 			}
 
 				#footer > .inner .copyright a {
