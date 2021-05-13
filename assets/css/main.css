@@ -2603,6 +2603,10 @@ input, select, textarea {
 		align-items: center;
 	}
 
+	#projects, #about__me {
+		margin-bottom: 1rem;
+	}
+
 	#projects h2, #skills h2, #about__me h2 {
 		margin-bottom: 5rem;
 		margin-top: 5rem;
@@ -2624,7 +2628,7 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			margin: 2.5em 0 2.5rem 2.5em;
 		}
 
 			.tiles article > .image {
@@ -2802,9 +2806,9 @@ input, select, textarea {
 
 		/* ADDED */
 		.tiles__links {
-			/* padding-top: 30px; */
 			position: absolute;
-			bottom: -2.4rem;
+			/* padding-top: 1rem; */
+			/* bottom: -3.5rem; */
 		}
 
 		body.is-preload .tiles article {
@@ -3223,6 +3227,20 @@ input, select, textarea {
 			}
 
 		}
+
+/* Skills */
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skills__icon {
+	font-size: 5rem;
+	box-sizing: border-box;
+	padding: 2rem;
+}
 
 /* Footer */
 
