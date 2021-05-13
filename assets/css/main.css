@@ -3234,6 +3234,7 @@ input, select, textarea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	/* max-height: 15vw; */
 }
 
 .skills__icon {
