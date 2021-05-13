@@ -2212,6 +2212,11 @@ input, select, textarea {
 		min-height: 3.75em;
 	}
 
+	/* ADDED */
+	#message {
+		padding-top: 1.8rem;
+	}
+
 	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
@@ -3224,6 +3229,15 @@ input, select, textarea {
 	#footer {
 		padding: 5em 0 6em 0 ;
 		background-color: #f6f6f6;
+	}
+	
+	/* ADDED */
+	.follow__contact-info {
+		padding-top: 1rem;
+	}
+
+	.follow__contact-info > p {
+		margin-bottom: 1rem;
 	}
 
 		#footer > .inner {

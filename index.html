@@ -185,22 +185,22 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
+							<section id="form__section">
+								<h2 id="form__section-title">Get in touch</h2>
+								<form id="contact__form" method="post" action="https://formspree.io/f/mrgrpqkw">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="name" id="name" placeholder="Name" class="name__field" required/>
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="email" name="email" id="email" placeholder="Email" class="email__field" required/>
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
+											<textarea name="message" id="message" placeholder="Message" class="message__field" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
+										<li><input type="submit" role="button" value="Send" class="primary send__button"/></li>
 									</ul>
 								</form>
 							</section>
@@ -215,6 +215,12 @@
 									<li><a href="https://www.instagram.com/sorenerose/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> -->
 								</ul>
+								<div class="follow__contact-info">
+									<strong>Renerose Dimatulac</strong>
+									<p>Software Engineer</p>
+									<strong>Email</strong>
+									<p><a href="mailto: rsdimatulac@gmail.com">rsdimatulac@gmail.com</a></p>
+								</div>
 							</section>
 							<ul class="copyright">
 								<li>&copy; <time>2021</time> Renerose Dimatulac. All rights reserved</li>
@@ -230,6 +236,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/contactForm.js"></script>
 	</body>
 </html>
