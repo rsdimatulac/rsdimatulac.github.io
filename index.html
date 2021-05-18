@@ -29,7 +29,15 @@
 							<!-- Nav -->
 								<nav>
 									<ul>
-										<li><a href="#menu">Menu</a></li>
+										<li>
+											<div class="theme__switch">
+												<label class="switch">
+													<input id="checkbox__switch" type="checkbox">
+													<span class="slider round"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></span>
+												</label>
+											</div>
+										</li>
+										<li><a class="menu__button" href="#menu">Menu</a></li>
 									</ul>
 								</nav>
 
@@ -56,8 +64,8 @@
 								<h1>Hello, I'm Renerose Dimatulac.<br />
 								I'm a Pilot turned Software Engineer in Chicago.</h1>
 								<p>See what I've been working on below. And here's my 
-									<span><strong><a>resume</a></strong></span> and 
-									<span><strong><a href="mailto: rsdimatulac@gmail.com">email</a></strong></span>.<br />
+									<span><strong><a class="a-tag">resume</a></strong></span> and 
+									<span><strong><a class="a-tag" href="mailto: rsdimatulac@gmail.com">email</a></strong></span>.<br />
 								Thanks for stopping by!</p>
 							</header>
 							<div id="projects"><h2>Projects</h2></div>
@@ -68,8 +76,8 @@
 										<!-- <img src="images/pic01.jpg" alt="" /> -->
 									</span>
 									<a href="https://brenb.herokuapp.com/">
-										<h2>BRENB</h2>
-										<div class="content">
+										<h2 class="tile">BRENB</h2>
+										<div class="content tile">
 											<p>A pixel perfect Airbnb clone built with JavaScript, React and Redux.</p>
 											<p>
 												<strong>(JavaScript, React, Redux, Sequelize, PostgreSQL, Express, HTML/CSS, AWS, Heroku)</strong>
@@ -77,9 +85,9 @@
 										</div>
 									</a>
 									<div class="tiles__links">
-										<a href="https://brenb.herokuapp.com/">Live</a>
+										<a class="a-tag" href="https://brenb.herokuapp.com/">Live</a>
 										|
-										<a href="https://github.com/rsdimatulac/BRenB">Repo</a>
+										<a class="a-tag" href="https://github.com/rsdimatulac/BRenB">Repo</a>
 									</div>
 								</article>
 								<article class="style2">
@@ -87,8 +95,8 @@
 										<img src="images/vvv.jpg" alt="" />
 									</span>
 									<a href="https://venividivoravi.herokuapp.com/welcome">
-										<h2>Veni Vidi Voravi</h2>
-										<div class="content">
+										<h2 class="tile">Veni Vidi Voravi</h2>
+										<div class="content tile">
 											<p>A clone inspired by Medium built with JavaScript, Pug, and Express.</p>
 											<p>
 												<strong>(JavaScript, Pug, CSS, Sequelize, PostgreSQL, Express, and Heroku)</strong>
@@ -96,9 +104,9 @@
 										</div>
 									</a>
 									<div class="tiles__links">
-										<a href="https://venividivoravi.herokuapp.com/welcome">Live</a>
+										<a class="a-tag" href="https://venividivoravi.herokuapp.com/welcome">Live</a>
 										|
-										<a href="https://github.com/rsdimatulac/Veni-Vidi-Voravi">Repo</a>
+										<a class="a-tag" href="https://github.com/rsdimatulac/Veni-Vidi-Voravi">Repo</a>
 									</div>
 								</article>
 								<!-- <article class="style3">
@@ -155,13 +163,13 @@
 									<i class="skills__icon devicon-redux-plain colored"></i>
 									<i class="skills__icon devicon-python-plain-wordmark colored"></i>
 									<i class="skills__icon devicon-postgresql-plain-wordmark colored"></i>
-									<i class="skills__icon devicon-sequelize-plain-wordmark colored"></i>
-									<i class="skills__icon devicon-express-original-wordmark colored"></i>
+									<i class="skills__icon devicon-sequelize-plain-wordmark"></i>
+									<i class="skills__icon devicon-express-original-wordmark"></i>
 									<i class="skills__icon devicon-nodejs-plain-wordmark colored"></i>
 									<i class="skills__icon devicon-html5-plain-wordmark colored"></i>
 									<i class="skills__icon devicon-css3-plain-wordmark colored"></i>
-									<i class="skills__icon devicon-flask-original-wordmark colored"></i>
-									<i class="skills__icon devicon-sqlalchemy-original-wordmark colored"></i>
+									<i class="skills__icon devicon-flask-original-wordmark"></i>
+									<i class="skills__icon devicon-sqlalchemy-original-wordmark"></i>
 									<i class="skills__icon devicon-heroku-plain-wordmark colored"></i>
 									<i class="skills__icon devicon-git-plain-wordmark colored"></i>
 								</div>
@@ -187,7 +195,7 @@
 									All the best,
 									</p>
 									<div class="sign__image">
-										<img src="/images/sign.jpg"> 
+										<img id="sign__image" src="/images/sign_black.png"> 
 									</div>
 								</div>
 							</section>
@@ -195,20 +203,20 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer" class="footer">
 						<div class="inner">
 							<section id="form__section">
 								<h2 id="form__section-title">Get in touch</h2>
 								<form id="contact__form" method="post" action="https://formspree.io/f/mrgrpqkw">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" class="name__field" required/>
+											<input type="text" name="name" id="name" placeholder="Name" class="formfield name__field" required/>
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" class="email__field" required/>
+											<input type="email" name="email" id="email" placeholder="Email" class="formfield email__field" required/>
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message" class="message__field" required></textarea>
+											<textarea name="message" id="message" placeholder="Message" class="formfield message__field" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -231,15 +239,15 @@
 									<strong>Renerose Dimatulac</strong>
 									<p>Software Engineer</p>
 									<strong>Email</strong>
-									<p><a href="mailto: rsdimatulac@gmail.com">rsdimatulac@gmail.com</a></p>
+									<p><a class="a-tag" href="mailto: rsdimatulac@gmail.com">rsdimatulac@gmail.com</a></p>
 								</div>
 							</section>
 							<ul class="copyright">
-								<li>&copy; <time>2021</time> Renerose Dimatulac. All rights reserved</li>
+								<li>&copy; <time>2021</time> Renerose Dimatulac. All rights reserved. Created with <a class="a-tag" href="http://html5up.net">HTML5 UP</a>.</li>
+								<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -249,5 +257,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/contactForm.js"></script>
+			<script src="assets/js/darkTheme.js"></script>
 	</body>
 </html>
