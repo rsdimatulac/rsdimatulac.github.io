@@ -2617,8 +2617,8 @@ input, select, textarea {
 	}
 
 	.sign__image img {
-		height: 12%;
-		width: 12%;
+		/* height: 12%; */
+		width: 14%;
 	}
 
 		.tiles article {
@@ -3435,7 +3435,6 @@ body.dark {
 	border-bottom: dotted 1px white;
 }
 
-/* ::placeholder,  */
 .formfield.dark::placeholder {
 	color: white;
 }
