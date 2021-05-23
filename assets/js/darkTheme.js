@@ -9,7 +9,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     input = document.querySelectorAll(".formfield");
     tiles = document.querySelectorAll(".tile");
 
-
     themeSwitch.addEventListener("change", () => {
         if (themeSwitch.checked) {
             body.classList.add("dark");
@@ -18,15 +17,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
             
             aTag.forEach(tag => {
                 tag.classList.add("dark");
-            })
+            });
             
             input.forEach(input => {
-                input.classList.add("dark")
-            })
+                input.classList.add("dark");
+            });
 
             tiles.forEach(tile => {
-                tile.classList.add("dark")
-            })
+                tile.classList.add("dark");
+            });
 
             footer.style.backgroundColor = "rgba(56, 56, 56, 0.658)";
             
@@ -40,15 +39,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
             });
 
             input.forEach(input => {
-                input.classList.remove("dark")
-            })
+                input.classList.remove("dark");
+            });
 
             tiles.forEach(tile => {
-                tile.classList.remove("dark")
-            })
+                tile.classList.remove("dark");
+            });
 
             footer.style.backgroundColor = "#f6f6f6";
-        }
-    })
-
-})
+        };
+    });
+});

@@ -1,11 +1,9 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
-    // do some logic for the form submission
-    const form = document.getElementById("contact__form")
-    const sendButton = document.querySelector(".send__button");
-    const formSection = document.getElementById("form__section")
-    const formTitle = document.getElementById("form__section-title")
-    const mainForm = document.getElementById("contact__form")
+    const form = document.getElementById("contact__form");
+    const formSection = document.getElementById("form__section");
+    const formTitle = document.getElementById("form__section-title");
+    const mainForm = document.getElementById("contact__form");
 
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -31,9 +29,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
             errorMessage.innerHTML = "Sorry! Something went wrong. Please try again.";
             mainForm.prepend(errorMessage);
         });
-    })
-    
-
-
-
+    });
 });
