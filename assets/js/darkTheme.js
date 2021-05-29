@@ -1,13 +1,13 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
-    themeSwitch = document.getElementById("checkbox__switch");
-    signImage = document.getElementById("sign__image");
-    body = document.querySelector("body");
-    aTag = document.querySelectorAll(".a-tag");
-    footer = document.getElementById("footer");
-    copyright = document.querySelector(".copyright");
-    input = document.querySelectorAll(".formfield");
-    tiles = document.querySelectorAll(".tile");
+    const themeSwitch = document.getElementById("checkbox__switch");
+    const signImage = document.getElementById("sign__image");
+    const body = document.querySelector("body");
+    const aTag = document.querySelectorAll(".a-tag");
+    const footer = document.getElementById("footer");
+    const copyright = document.querySelector(".copyright");
+    const input = document.querySelectorAll(".formfield");
+    const tiles = document.querySelectorAll(".tile");
 
     themeSwitch.addEventListener("change", () => {
         if (themeSwitch.checked) {
