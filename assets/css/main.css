@@ -2320,13 +2320,23 @@ input, select, textarea {
 /* Image */
 	/* MY IMAGE */
 	#my_image {
-		padding-bottom: 25px;
+		margin-bottom: 60px;
+		display: flex;
+		align-items: center;
+	}
+
+	#my_image > p {
+		padding-right: 150px;
+		margin: 0;
+		font-style: italic;
+		font-weight: 500;
 	}
 
 	#my_image img {
 		height: 20%;
 		width: 20%;
 		border-radius: 50%;
+		margin-right: 3rem;
 	}
 
 	.image {
@@ -2909,6 +2919,10 @@ input, select, textarea {
 			#header .logo .symbol {
 				margin-right: 0.65em;
 			}
+
+				.symbol { /* I ADDED */
+					font-size: 2rem;
+				}
 
 				#header .logo .symbol img {
 					display: block;
