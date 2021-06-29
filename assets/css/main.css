@@ -2916,12 +2916,13 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
-			#header .logo .symbol {
+			#header .logo {
 				margin-right: 0.65em;
 			}
 
 				.symbol { /* I ADDED */
 					font-size: 2rem;
+					margin-right: 0.5rem;
 				}
 
 				#header .logo .symbol img {
