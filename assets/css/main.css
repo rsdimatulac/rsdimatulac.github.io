@@ -3296,6 +3296,11 @@ input, select, textarea {
 	padding: 2rem;
 }
 
+.skills__icon__cypress {
+	height: 5rem;
+	width: 5rem;
+}
+
 .devicon-sqlalchemy-original-wordmark,
 .devicon-sequelize-plain-wordmark {
 	font-size: 6rem;
