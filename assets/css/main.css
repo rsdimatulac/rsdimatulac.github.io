@@ -3299,11 +3299,15 @@ input, select, textarea {
 .skills__icon__cypress {
 	height: 5rem;
 	width: 5rem;
+	margin: 2rem;
 }
 
 .devicon-sqlalchemy-original-wordmark,
-.devicon-sequelize-plain-wordmark {
-	font-size: 6rem;
+.devicon-sequelize-plain-wordmark,
+.devicon-nodejs-plain-wordmark,
+.devicon-sequelize-plain-wordmark,
+.devicon-amazonwebservices-plain-wordmark {
+	font-size: 6.5rem;
 }
 
 /* Footer */
@@ -3473,7 +3477,7 @@ input, select, textarea {
 		width: 100%;
 		max-width: 68em;
 		margin: 0 auto;
-		padding: 0 2.5em;
+		padding: 0 2.6em;
 	}
 
 		@media screen and (max-width: 736px) {
