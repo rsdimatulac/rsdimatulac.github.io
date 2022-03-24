@@ -11,42 +11,42 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     themeSwitch.addEventListener("change", () => {
         if (themeSwitch.checked) {
-            body.classList.add("dark");
-            signImage.src = "images/sign_white.png";
-            copyright.classList.add("dark");
+            body.classList.add("white");
+            signImage.src = "images/sign_black.png";
+            copyright.classList.add("white");
             
             aTag.forEach(tag => {
-                tag.classList.add("dark");
+                tag.classList.add("white");
             });
             
             input.forEach(input => {
-                input.classList.add("dark");
+                input.classList.add("white");
             });
 
             tiles.forEach(tile => {
-                tile.classList.add("dark");
+                tile.classList.add("white");
+            });
+
+            footer.style.backgroundColor = "rgba(246, 246, 246)";
+            
+        } else {
+            body.classList.remove("white");
+            signImage.src = "images/sign_white.png";
+            copyright.classList.remove("white");
+
+            aTag.forEach(tag => {
+                tag.classList.remove("white");
+            });
+
+            input.forEach(input => {
+                input.classList.remove("white");
+            });
+
+            tiles.forEach(tile => {
+                tile.classList.remove("white");
             });
 
             footer.style.backgroundColor = "rgba(56, 56, 56, 0.658)";
-            
-        } else {
-            body.classList.remove("dark");
-            signImage.src = "images/sign_black.png";
-            copyright.classList.remove("dark");
-
-            aTag.forEach(tag => {
-                tag.classList.remove("dark");
-            });
-
-            input.forEach(input => {
-                input.classList.remove("dark");
-            });
-
-            tiles.forEach(tile => {
-                tile.classList.remove("dark");
-            });
-
-            footer.style.backgroundColor = "#f6f6f6";
         };
     });
 });

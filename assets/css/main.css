@@ -103,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #222222;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +120,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: white;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -149,8 +149,8 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		color: white;
+		border-bottom: dotted 1px white;
 	}
 
 		a:hover {
@@ -3314,7 +3314,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 2.5em 0 ;
-		background-color: #f6f6f6;
+		background-color: rgba(56, 56, 56, 0.658);
 	}
 	
 	/* ADDED */
@@ -3490,22 +3490,15 @@ input, select, textarea {
 
 
 /* DARK THEME */
-
-body.dark {
-	background-color:#222222;
-	color: white;
-}
-
-.a-tag.dark {
-	color: white;
+.a-tag {
 	border-bottom: dotted 1px white;
 }
 
-.formfield.dark::placeholder {
+.formfield::placeholder {
 	color: white;
 }
 
-.copyright.dark li {
+.copyright li {
 	color: white;
 }
 
@@ -3513,8 +3506,44 @@ body.dark {
 	color: white;
 }
 
-.tile.dark {
+.tile {
 	color: white;
+}
+
+#footer {
+	background-color: rgba(56, 56, 56, 0.658);
+}
+
+/* WHITE THEME */
+
+body.white {
+	background-color:#ffffff;
+	color:#585858;
+}
+
+.a-tag.white {
+	color: #585858;
+	border-bottom: dotted 1px #585858;
+}
+
+.formfield.white::placeholder {
+	color: #585858;
+}
+
+.copyright.white li {
+	color: #585858;
+}
+
+.menu__button {
+	color: #585858;
+}
+
+.tile.white {
+	color: #585858;
+}
+
+#footer.white {
+	background-color: rgba(246, 246, 246);
 }
 
 /* SLIDER */
@@ -3549,7 +3578,7 @@ body.dark {
   right: 0;
   bottom: 0;
   /* background-color: #ccc; */
-  background-color: #FDB813;
+  background-color: #2196F3;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -3567,11 +3596,11 @@ body.dark {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #FDB813;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #FDB813;
 }
 
 input:checked + .slider:before {
