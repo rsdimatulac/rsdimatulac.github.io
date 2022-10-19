@@ -3296,7 +3296,11 @@ input, select, textarea {
 	padding: 2rem;
 }
 
-.skills__icon__cypress, .skills__icon__pytest {
+.skills__icon__cypress, 
+.skills__icon__pytest, 
+.skills__icon__python, 
+.skills__icon__js,
+.skills__icon__ts {
 	height: 5rem;
 	width: 5rem;
 	margin: 2rem;
