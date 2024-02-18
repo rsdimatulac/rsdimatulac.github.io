@@ -2612,17 +2612,17 @@ input, select, textarea {
 	}
 
 	/* ADDED */
-	#projects, #skills, #about__me {
+	#projects, #skills, #my__story {
 		height: 8rem;
 		display: flex;
 		align-items: center;
 	}
 
-	#projects, #about__me {
+	#projects, #my__story {
 		margin-bottom: 1rem;
 	}
 
-	#projects h2, #skills h2, #about__me h2 {
+	#projects h2, #skills h2, #my__story h2 {
 		margin-bottom: 5rem;
 		margin-top: 5rem;
 	}
@@ -3296,11 +3296,9 @@ input, select, textarea {
 	padding: 2rem;
 }
 
-.skills__icon__cypress, 
 .skills__icon__pytest, 
-.skills__icon__python, 
-.skills__icon__js,
-.skills__icon__ts {
+.skills__icon__python,
+.skills__icon__figma {
 	height: 5rem;
 	width: 5rem;
 	margin: 2rem;
@@ -3312,12 +3310,16 @@ input, select, textarea {
 	margin: 2rem;
 }
 
-.devicon-sqlalchemy-original-wordmark,
-.devicon-sequelize-plain-wordmark,
 .devicon-nodejs-plain-wordmark,
 .devicon-sequelize-plain-wordmark,
 .devicon-amazonwebservices-plain-wordmark {
 	font-size: 6.5rem;
+}
+
+.devicon-sqlalchemy-plain-wordmark,
+.devicon-tailwindcss-plain-wordmark,
+.devicon-postman-plain-wordmark {
+	font-size: 8rem;
 }
 
 /* Footer */
