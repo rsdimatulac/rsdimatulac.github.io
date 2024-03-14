@@ -3274,15 +3274,20 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main {
-				padding: 0em 0 4em 0 ;
+				padding: 0em 0 4em 0;
 			}
 
 		}
 
-	/* ADDED */
-	/* .subheading {
-		font-size: 2.5rem;
-	} */
+		@media screen and (max-width: 1024px) {
+			.inner__div > p {
+				width: fit-content;
+			}
+		}
+
+	.inner__div > p {
+		line-height: 1.2;
+	}
 
 /* Skills */
 
