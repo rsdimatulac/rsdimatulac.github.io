@@ -3343,6 +3343,16 @@ input, select, textarea {
 	font-size: 8rem;
 }
 
+	@media screen and (max-width: 736px) {
+		.skills__icon__next,
+		.skills__icon__fastapi,
+		.devicon-tailwindcss-plain-wordmark,
+		.devicon-sqlalchemy-plain-wordmark,
+		.devicon-postman-plain-wordmark {
+			margin: 1rem;
+		}
+	}
+
 /* Footer */
 
 	#footer {
