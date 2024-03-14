@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     const themeSwitch = document.getElementById("checkbox__switch");
     const signImage = document.getElementById("sign__image");
+    const navbar = document.getElementById("navbar");
     const body = document.querySelector("body");
     const aTag = document.querySelectorAll(".a-tag");
     const footer = document.getElementById("footer");
@@ -20,6 +21,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             sqlAlchemyLogo.classList.add("colored");
             sequelizeLogo.classList.add("colored");
             cypressLogo.classList.add("colored");
+            navbar.classList.add("white");
             
             aTag.forEach(tag => {
                 tag.classList.add("white");
@@ -42,6 +44,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             sqlAlchemyLogo.classList.remove("colored");
             sequelizeLogo.classList.remove("colored");
             cypressLogo.classList.remove("colored");
+            navbar.classList.remove("white");
 
             aTag.forEach(tag => {
                 tag.classList.remove("white");

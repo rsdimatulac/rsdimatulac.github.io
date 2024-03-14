@@ -3045,13 +3045,17 @@ input, select, textarea {
 			
 			#navbar {
 				position: relative;
-				background-color: white;
+				background-color: rgba(56, 56, 56, 0.658);
 				display: flex;
 				justify-content: space-between;
 				width: 100%;
 				padding-left: 1rem;
 				right: 0;
 				box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+			}
+
+			#navbar.white {
+				background-color: white;
 			}
 
 			body {
